@@ -1,0 +1,11 @@
+{
+    "name": "groblocs",
+    "description": "ssid osv",
+    "icon": "./static/libs/tropic.png",
+    "files": [
+        "main.ts"
+    ],
+    "dependencies": {
+        "core": "file:../core"
+    }
+}
