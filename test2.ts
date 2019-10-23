@@ -1,3 +1,5 @@
+
+//% color=190 weight=100 icon="\uf1ec" block="Grobot blocks"
 namespace grobot {
 
 
