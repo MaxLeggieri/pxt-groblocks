@@ -4,11 +4,13 @@ namespace grobot {
 
 
     //% block
+    //% parts="grobot"
     export function grobotClock(tidFra: number, tidTil: number):void {
 
     }
 
     //% block
+    //% parts="grobot"
     export function grobotWifi(ssid: string, passcode: string):void {
 
     }
