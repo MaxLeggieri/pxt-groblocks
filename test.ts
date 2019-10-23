@@ -9,13 +9,14 @@ namespace Test {
     //% blockId="test_grobot_cloak" block="%grobot"
     //% weight=85 blockGap=8
     //% parts="neopixel"
-    clock(from: number, to: number) {
-
-    return (from+to)
+    clock(tidFra: number, tidTil: number):void {
+    if (tidFra <= tidTil) {
+      tidTil++
+      }
     }
 
   }
-  //% block
+
 
 
 }
