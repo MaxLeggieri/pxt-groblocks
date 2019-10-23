@@ -3,10 +3,15 @@
 namespace Test {
 
 
+  export class grobot {
 
-  //% block
-  export function clock(from: number, to: number) {
+    clock(from: number, to: number) {
+
+    return (from+to)
+    }
 
   }
+  //% block
+
 
 }
