@@ -49,7 +49,7 @@ namespace groblocks {
      * Moves the turtle for the given amount of pixels
      * @param timer number of steps, eg: 1
      */
-    //% blockId=turtleForward block="forward %steps|steps"
+    //% blockId=turtleForward block="count %stimer|hours"
     //% weight=99 blockGap=8
     export function clock(timer: number): void {
 
