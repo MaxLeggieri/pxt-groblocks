@@ -8,7 +8,7 @@ enum TurtlePenMode {
  * Turtle graphics blocks
  */
 //% weight=100 color=#0f9c11 icon="\uf188"
-namespace grobot {
+namespace groblocks {
     let _x: number;
     let _y: number;
     //let _direction: number; // 0 right, 1 down, 2 left, 3 top
@@ -52,6 +52,6 @@ namespace grobot {
     //% blockId=turtleForward block="forward %steps|steps"
     //% weight=99 blockGap=8
     export function clock(timer: number): void {
-        serial.writeString()
+
         }
     }

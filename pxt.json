@@ -1,5 +1,5 @@
 {
-    "name": "grobot",
+    "name": "groblocks",
     "version": "0.0.1",
     "dependencies": {
         "core": "*"
@@ -13,5 +13,5 @@
         "test.ts"
     ],
     "public": true,
-    "installedVersion": "github:microsoft/pxt-microturtle#v0.0.9"
+    "installedVersion": "github:Nikomof/pxt-groblocks#v0.0.1"
 }
