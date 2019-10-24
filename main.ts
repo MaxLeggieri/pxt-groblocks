@@ -42,7 +42,7 @@ namespace groblocks {
     //let _delay = 250;
 
     /**
-    * times hours
+    * prints string on LEDS and on serial port
     * @param testString string
     */
     //% blockId=testSerialPrint block="Test Serial print: %testString"
@@ -53,20 +53,20 @@ namespace groblocks {
     }
 
     /**
-     * times hours
+     * actuators
      * @param mode enum, actuators eg fan or heater
      */
     //% blockId=testActu block="Choose an actuator %mode"
     //% weight=99 blockGap=8
     export function testActu(mode: actuList):void {
-      basic.showString(mode);
+
     }
 
 
   /**
   * times hours
   */
-  //% blockId=testSensor block="Show number"
+  //% blockId=testSensor block="Hummidity"
   //% weight=99 blockGap=8
   export function testSensor():void {
 
