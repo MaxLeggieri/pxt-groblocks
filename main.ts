@@ -45,7 +45,7 @@ namespace groblocks {
     * times hours
     * @param testString string
     */
-    //% blockId=testSerialPrint block="Test Serial print: %testString| "
+    //% blockId=testSerialPrint block="Test Serial print: %testString"
     //% weight=99 blockGap=8
     export function testSerialPrint(testString: string):void{
       basic.showString(testString);
@@ -56,10 +56,10 @@ namespace groblocks {
      * times hours
      * @param mode enum, actuators eg fan or heater
      */
-    //% blockId=testActu="Choose an actuator %mode"
+    //% blockId=testActu block="Choose an actuator %mode"
     //% weight=99 blockGap=8
-    export function testActu(mode: actuList): void {
-    basic.showString(mode)
+    export function testActu(mode: actuList):void {
+      basic.showString(mode);
     }
 
 
