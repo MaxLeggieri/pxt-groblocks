@@ -1,11 +1,17 @@
 {
-    "name": "groblocs",
-    "description": "ssid osv",
-    "icon": "./static/libs/tropic.png",
-    "files": [
-        "main.ts"
-    ],
+    "name": "grobot",
+    "version": "0.0.1",
     "dependencies": {
-        "core": "file:../core"
-    }
+        "core": "*"
+    },
+    "description": "Groblokke",
+    "files": [
+        "testMain.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "installedVersion": "github:microsoft/pxt-microturtle#v0.0.9"
 }

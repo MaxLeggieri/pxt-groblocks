@@ -1,33 +1,4 @@
 
-Skip to content
-Pull requests
-Issues
-Marketplace
-Explore
-@Nikomof
-
-17
-30
-
-    66
-
-microsoft/pxt-neopixel
-Code
-Issues 10
-Pull requests 3
-Actions
-Security
-Insights
-pxt-neopixel/neopixel.ts
-@lionyhw lionyhw change init brightness (#41) c2b324f on 28 Mar
-@pelikhan
-@darzu
-@thtuerk
-@nielsswinkels
-@mmoskal
-@abchatra
-@lionyhw
-578 lines (535 sloc) 20.1 KB
 /**
  * Well known colors for a NeoPixel strip
  */
