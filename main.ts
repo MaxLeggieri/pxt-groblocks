@@ -13,10 +13,8 @@ Sequence #
 
 
 enum testEnum {
-    //% block="One"
     One,
-    //% block="Two"
-    Two
+    Two,
 }
 
 enum actuList {
@@ -26,10 +24,11 @@ enum actuList {
   fan,
   //% block="Pump"
   pump,
-
 }
+
+
 /**
- * Turtle graphics blocks
+ * Grobot graphics block
  */
 //% weight=100 color=#0f9c11 icon="\uf188"
 namespace groblocks {
@@ -53,11 +52,10 @@ namespace groblocks {
 
     /**
      * actuators
-     * @param mode enum, actuators eg fan or heater
      */
     //% blockId=testActu block="Choose an actuator %mode"
     //% weight=99 blockGap=8
-    export function testActu(_mode: actuList):void {
+    export function testActu(mode: actuList) {
 
     }
 
@@ -67,9 +65,9 @@ namespace groblocks {
   */
   //% blockId=testSensor block="Hummidity"
   //% weight=99 blockGap=8
-  export function testSensor():void {
+  //export function testSensor():void {
 
-  }
+//  }
 
 
 }
