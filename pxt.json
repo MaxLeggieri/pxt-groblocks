@@ -3,6 +3,7 @@
     "version": "0.0.4",
     "dependencies": {
         "core": "*"
+        "serial": "*"
     },
     "description": "Groblokke",
     "files": [
