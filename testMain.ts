@@ -30,7 +30,7 @@ namespace groblocks {
 
 
     export function testSerial(testString: string):void{
-      basic.showString(testString);
+      //basic.showString(testString);
   }
 
 
