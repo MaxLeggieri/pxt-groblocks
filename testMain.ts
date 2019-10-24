@@ -35,7 +35,7 @@ namespace groblocks {
     //% blockId=turtleForward2 block="Show %testString|as string"
     //% weight=99 blockGap=8
     export function testSerial(testString: string):void{
-      //basic.showString(testString);
+      basic.showString(testString);
   }
 
 
