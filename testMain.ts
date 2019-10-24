@@ -1,8 +1,8 @@
-enum TurtlePenMode {
-    //% block="down"
-    Down,
-    //% block="up"
-    Up
+enum testOneTwo {
+    //% block="One"
+    One,
+    //% block="Two"
+    Two
 }
 /**
  * Turtle graphics blocks
@@ -17,34 +17,7 @@ namespace groblocks {
     //let _img: Image;
     let _delay = 250;
 
-    /*function init() {
-        if (!_img) {
-            led.setBrightness(255);
-            led.setDisplayMode(DisplayMode.Greyscale);
-            _x = 2;
-            _y = 2;
-            _direction = 3;
-            _brightness = 128;
-            _img = images.createImage(`
-                . . . . .
-                . . . . .
-                . . . . .
-                . . . . .
-                . . . . .
-                `)
-            basic.clearScreen();
-        }
-    }
 
-    function paint() {
-        // plot background
-        _img.plotImage();
-        // plot turtle
-        led.plotBrightness(_x, _y, 255);
-        // slow down
-        basic.pause(_delay);
-    }
-*/
     /**
      * times hours
      * @param timer number of hours, eg: 1
@@ -54,4 +27,12 @@ namespace groblocks {
     export function clock(timer: number): void {
 
         }
-    }
+
+
+  export function testSerial(testString: string):void{
+    basic.showString(testString);
+  }
+
+
+
+}
