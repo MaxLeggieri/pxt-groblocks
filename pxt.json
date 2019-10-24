@@ -13,5 +13,6 @@
         "test.ts"
     ],
     "public": true,
-    "installedVersion": "github:Nikomof/pxt-groblocks#v0.0.1"
+    "installedVersion": "workspace:d394324d-aabb-4c9e-c4e1-4f2171c92e04",
+    "preferredEditor": "tsprj"
 }
