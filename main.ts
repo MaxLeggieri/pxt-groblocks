@@ -1,17 +1,43 @@
+enum testOneTwo {
+    //% block="One"
+    One,
+    //% block="Two"
+    Two
+}
+/**
+ * Turtle graphics blocks
+ */
+//% weight=100 color=#0f9c11 icon="\uf188"
+namespace groblocks {
+    let _x: number;
+    let _y: number;
+    //let _direction: number; // 0 right, 1 down, 2 left, 3 top
+    //let _brightness: number;
+    //let _penMode: TurtlePenMode = TurtlePenMode.Up;
+    //let _img: Image;
+    let _delay = 250;
 
-//% color=190 weight=100 icon="\uf1ec" block="Grobot blocks"
-namespace grobot {
+
+    /**
+     * times hours
+     * @param timer number of hours, eg: 1
+     */
+    //% blockId=turtleForward block="count %timer|hours"
+    //% weight=99 blockGap=8
+    export function clock(timer: number): void {
+
+        }
+
+    /**
+    * times hours
+    * @param testString string
+    */
+    //% blockId=turtleForward2 block="Show %testString|as string"
+    //% weight=99 blockGap=8
+    export function testSerial(testString: string):void{
+      basic.showString(testString);
+  }
 
 
-    //% block
-    //% parts="grobot"
-    export function grobotClock(tidFra: number, tidTil: number):void {
 
-    }
-
-    //% block
-    //% parts="grobot"
-    export function grobotWifi(ssid: string, passcode: string):void {
-
-    }
 }

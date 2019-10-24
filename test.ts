@@ -1,6 +1,6 @@
 
 
-namespace Test {
+namespace groblocks {
 
 
   export class grobot {

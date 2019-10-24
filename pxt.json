@@ -6,7 +6,7 @@
     },
     "description": "Groblokke",
     "files": [
-        "testMain.ts",
+        "main.ts",
         "README.md"
     ],
     "testFiles": [
