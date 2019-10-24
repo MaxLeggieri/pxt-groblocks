@@ -31,7 +31,7 @@ enum actuList {
 /**
  * Turtle graphics blocks
  */
-//% weight=100 color=#0f9c11 icon="\uf188"
+//% weight=100 color=#0f9c11 icon="\f4d8"
 namespace groblocks {
     //let _x: number;
     //let _y: number;
