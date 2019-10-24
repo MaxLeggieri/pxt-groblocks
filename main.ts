@@ -35,11 +35,10 @@ enum actuList {
 namespace groblocks {
     //let _x: number;
     //let _y: number;
-    //let _direction: number; // 0 right, 1 down, 2 left, 3 top
-    //let _brightness: number;
-    //let _penMode: TurtlePenMode = TurtlePenMode.Up;
-    //let _img: Image;
-    //let _delay = 250;
+
+
+
+
 
     /**
     * prints string on LEDS and on serial port
@@ -58,7 +57,7 @@ namespace groblocks {
      */
     //% blockId=testActu block="Choose an actuator %mode"
     //% weight=99 blockGap=8
-    export function testActu(mode: actuList):void {
+    export function testActu(_mode: actuList):void {
 
     }
 
