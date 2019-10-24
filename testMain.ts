@@ -29,8 +29,8 @@ namespace groblocks {
         }
 
 
-  export function testSerial(testString: string):void{
-    basic.showString(testString);
+    export function testSerial(testString: string):void{
+      basic.showString(testString);
   }
 
 
