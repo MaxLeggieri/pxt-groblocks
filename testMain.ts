@@ -49,9 +49,9 @@ namespace groblocks {
      * times hours
      * @param timer number of hours, eg: 1
      */
-    //% blockId=turtleForward block="count %stimer|hours"
+    //% blockId=turtleForward block="count %timer|hours"
     //% weight=99 blockGap=8
     export function clock(timer: number): void {
-    
+
         }
     }
