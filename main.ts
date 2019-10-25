@@ -44,7 +44,7 @@ namespace groblocks {
     //% blockId=testActu block="Choose an actuator %mode"
     //% weight=99 blockGap=8
     export function testActu(mode: actuList) : void {
-      serial.writeString()
+      serial.writeString(mode)
     }
 
 
