@@ -45,9 +45,9 @@ namespace groblocks {
     */
     //% blockId=testSerialPrint block="Test Serial print: %testString"
     //% weight=99 blockGap=8
-    export function testSerialPrint(testString: string):void{
+    export function testSerialPrint(testString: string) : void {
       basic.showString(testString);
-      serial.serialWrite(teststring);
+      //serial.serialWrite(teststring);
     }
 
     /**
@@ -55,7 +55,7 @@ namespace groblocks {
      */
     //% blockId=testActu block="Choose an actuator %mode"
     //% weight=99 blockGap=8
-    export function testActu(mode: actuList) {
+    export function testActu(mode: actuList) : void {
 
     }
 
@@ -65,7 +65,7 @@ namespace groblocks {
   */
   //% blockId=testSensor block="Hummidity"
   //% weight=99 blockGap=8
-  //export function testSensor():void {
+  //export function testSensor() : void {
 
 //  }
 
