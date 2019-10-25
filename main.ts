@@ -51,7 +51,7 @@ namespace groblocks {
     }
 
     /**
-     * actuators
+     * actuator
      */
     //% blockId=testActu block="Choose an actuator %mode"
     //% weight=99 blockGap=8
