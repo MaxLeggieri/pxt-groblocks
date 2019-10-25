@@ -43,16 +43,16 @@ namespace groblocks {
     */
     //% blockId=testActu block="Choose an actuator %mode"
     //% weight=99 blockGap=8
-    export function testActu(mode: actuList) : void {
-      serial.writeString(mode);
-    }
+    //export function testActu(mode: actuList) : void {
+    //  serial.writeString(mode);
+    //}
 
 
   //% blockId=testShadow  block="Shadow test %msg"
   //% text.shadowOptions.toString=true
-  export function testShadow(text: string): void {
-    serial.writeString(text);
-  }
+  //export function testShadow(text: string): void {
+  //  serial.writeString(text);
+  //}
 
 
 
