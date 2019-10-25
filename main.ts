@@ -51,7 +51,7 @@ namespace groblocks {
   //% blockId=testShadow  block="Shadow test %msg"
   //% text.shadowOptions.toString=true
   export function testShadow(text: string): void {
-      serial.writeString(text + "\r\n");
+    serial.writeString(text);
   }
 
 
