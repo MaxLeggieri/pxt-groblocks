@@ -28,7 +28,7 @@ enum actuList {
 
 
 /**
- * Grobot graphics block
+ * Grobot gxraphics block
  */
 //% weight=100 color=#0f9c11 icon="\uf188"
 namespace groblocks {
