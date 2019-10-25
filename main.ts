@@ -28,7 +28,7 @@ enum actuList {
 
 
 /**
- * Grobot gxraphics block
+ * Grobot graphics block
  */
 //% weight=100 color=#0f9c11 icon="\uf188"
 namespace groblocks {
@@ -56,10 +56,16 @@ namespace groblocks {
     //% blockId=testActu block="Choose an actuator %mode"
     //% weight=99 blockGap=8
     export function testActu(mode: actuList) : void {
-
+    serial.writeString()
     }
 
 
+
+  //% blockId=testShadow  block="Shadow test|log %msg"
+  //% text.shadowOptions.toString=true
+  export function testShadow(text: string): void {
+      serial.writeString(text + "\r\n");
+  }
   /**
   * times hours
   */
