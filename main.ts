@@ -47,7 +47,7 @@ namespace groblocks {
     //% weight=99 blockGap=8
     export function testSerialPrint(testString: string) : void {
       basic.showString(testString);
-      //serial.serialWrite(teststring);
+      serial.serialWrite(teststring);
     }
 
     /**
