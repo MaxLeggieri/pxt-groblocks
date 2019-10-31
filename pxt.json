@@ -12,7 +12,5 @@
     "testFiles": [
         "test.ts"
     ],
-
     "public": true
-
 }
