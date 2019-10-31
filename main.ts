@@ -118,10 +118,27 @@ let groID = serial.readUntil(serial.delimiters(Delimiters.Comma));
   /**
   * Mock-up timer block
   */
-  //% blockId=mockUpTimer block="timer fra %fra| til %til"
+  //% blockId=mockUpTimer block="fra klokken %fra| til klokken %til"
+export function setClock(clockFra: number, clcokTil: number){
+
+}
+
+/**
+* Mock-up timer block
+*/
+//% blockId=mockUpTimer block="Timer: %fra| timer %til| minutter"
+export function setTimer(timerFra: number, timerTil: number){
+
+}
+
+/**
+* Mock-up timer block
+*/
+//% blockId=mockUpTimer block="Timer: fra %fra| til %til"
 export function setTimer(fra: number, til: number){
 
 }
+
 
   /**
   * Haps
