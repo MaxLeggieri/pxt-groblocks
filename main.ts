@@ -6,33 +6,121 @@ Moisture		       UV Grow
 Co2	               5 pumps
 Sequence #
 */
-enum testEnum {
-    One,
-    Two,
-}
 
 enum actuList {
   //% block="Heater"
   heater,
   //% block="fan"
   fan,
-  //% block="Pump"
-  pump,
 }
 
+enum pumpList {
+  //% block="Air Circulation"
+  airPump,
+  //% block="Water circulation"
+  waterPump,
+  //% block="Airation"
+  airationPump,
+  //% block="External pump 1"
+  fert1Pump,
+  //% block="External pump 2"
+  fert2Pump,
+  //% block="External pump 1"
+}
+
+enum lightList {
+    //% block="White light"
+    whiteGrow,
+    //% block="IR light"
+    irGrow,
+    //% block="UV light"
+    uvGrow,
+}
 
 
 // groblocks graphics
 //% weight=100 color=#0f9c11 icon="\uf188"
 namespace groblocks {
 
+  /**
+  * Mock-up Clock
+  */
+  //% block
+  export function Clock(): number {
+      return 0;
+  }
+
+  /**
+   * Mock-up Hummidity
+   */
+  //% block
+  export function Hummidity (): number {
+      return 0;
+  }
+
+  /**
+   * Mock-up co2
+   */
+  //% block
+  export function Co2(): number {
+      return 0;
+  }
+
+  /**
+   * Mock-up Temperature
+   */
+  //% block
+  export function Temperature(): number {
+      return 0;
+  }
+
+
+
+
+  /**
+  * Mock-up Light block
+  */
+  //% blockId=mockUpLight block="Choose a light type %lightList| with brightness %brightness"
+  export function setLights(type: lightList, brightness: number){
+
+  }
+
+  /**
+  * Mock-up pump block
+  */
+  //% blockId=mockUpFan block="Choose a pump type %pumpList| with brightness %brightness"
+  export function setPump(type: pumpList, speed: number){
+  }
+
+
+  /**
+  * Mock-up actuator block
+  */
+  //% blockId=mockUpActuator block="Choose an actuator"
+  export function setActuator(mode:actuList, randNum: number){
+
+  }
+
+
+
+
+  /**
+  * Test loaded from comment
+  */
+  //% blockId=testActu block="Choose an actuator %mode"
+  //% weight=99 blockGap=8
+  //export function testActu(mode: actuList) : void {
+  //  serial.writeString(mode);
+  //}
+
+
 
     /**
     * prints string on LEDS and on serial port
     * @param testString string
     */
-    //% blockId=testSerialPrint block="Test Serial print: %testString"
     //% weight=99 blockGap=8
+    //% blockId=testSerialPrint block="Test Serial print: %testString"
     export function testSerialPrint(testString: string) : void {
       basic.showString(testString);
       serial.writeString(testString);
