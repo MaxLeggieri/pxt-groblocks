@@ -1,6 +1,6 @@
 {
     "name": "groblocks",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "dependencies": {
         "core": "*"
     },
@@ -12,7 +12,5 @@
     "testFiles": [
         "test.ts"
     ],
-
     "public": true
-
 }
