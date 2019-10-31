@@ -80,7 +80,7 @@ namespace groblocks {
   /**
   * Mock-up Light block
   */
-  //% blockId=mockUpLight block="Choose a light type %lightList with brightness %brightness"
+  //% blockId=mockUpLight block="Choose light %lightList, with brightness %brightness"
   export function setLights(type: lightList, brightness: number){
 
   }
@@ -100,6 +100,25 @@ namespace groblocks {
   export function setActuator(mode:actuList, randNum: number){
 
   }
+
+
+  /**
+  * Haps
+  */
+  //% block
+  export function skalvihaveenBoolean(number: number): boolean {
+    return false;
+  }
+
+
+      /**
+      * This is an event handler block
+      */
+      //% block="on event"
+      export function grostart(handler: () => void) {
+   }
+
+
 
 
 
