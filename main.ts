@@ -88,7 +88,7 @@ namespace groblocks {
   /**
   * Mock-up pump block
   */
-  //% blockId=mockUpFan block="Choose a pump type %pumpList| with brightness %brightness"
+  //% blockId=mockUpFan block="Choose pump %pumpList| with speed %speed"
   export function setPump(type: pumpList, speed: number){
   }
 
@@ -96,7 +96,7 @@ namespace groblocks {
   /**
   * Mock-up actuator block
   */
-  //% blockId=mockUpActuator block="Choose a pump type %actuList| with brightness %randNum"
+  //% blockId=mockUpActuator block="Choose actuator %actuList| intensity %randNum"
   export function setActuator(mode:actuList, randNum: number){
 
   }
