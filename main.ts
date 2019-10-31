@@ -42,6 +42,20 @@ enum lightList {
 //% weight=100 color=#0f9c11 icon="\uf188"
 namespace groblocks {
 
+function init(){
+let groID = serial.readUntil(serial.delimiters(Delimiters.Comma));
+
+
+
+}
+
+
+
+
+
+
+
+
   /**
   * Mock-up Clock
   */
@@ -80,7 +94,7 @@ namespace groblocks {
   /**
   * Mock-up Light block
   */
-  //% blockId=mockUpLight block="Choose light %lightList, with brightness %brightness"
+  //% blockId=mockUpLight block="Light %lightList, Brightness %brightness"
   export function setLights(type: lightList, brightness: number){
 
   }
@@ -88,7 +102,7 @@ namespace groblocks {
   /**
   * Mock-up pump block
   */
-  //% blockId=mockUpFan block="Choose pump %pumpList| with speed %speed"
+  //% blockId=mockUpFan block="Pump %pumpList| with speed %speed"
   export function setPump(type: pumpList, speed: number){
   }
 
@@ -101,12 +115,19 @@ namespace groblocks {
 
   }
 
+  /**
+  * Mock-up timer block
+  */
+  //% blockId=mockUpTimer block="timer fra %fra| til %til"
+export function setTimer(fra: number, til: number){
+
+}
 
   /**
   * Haps
   */
   //% block
-  export function skalvihaveenBoolean(number: number): boolean {
+  export function skalViHaveEnBoolean(number: number): boolean {
     return false;
   }
 
