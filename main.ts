@@ -157,7 +157,10 @@ export function setTimer(fra: number, til: number){
    }
 
 
-
+   //%block="Klokken: fra %test| til %test2"
+       export function randomBoolean(test: number, test2: number): boolean {
+           return false;
+       }
 
 
 
