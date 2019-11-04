@@ -131,13 +131,6 @@ export function setTimer(timerFra: number, timerTil: number){
 
 }
 
-/**
-* Mock-up timer block
-*/
-//% blockId=mockUpTimer block="Timer: fra %fra| til %til"
-export function setTimer(fra: number, til: number){
-
-}
 
 
   /**
