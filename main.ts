@@ -30,12 +30,12 @@ enum pumpList {
 }
 
 enum lightList {
-    //% block="White light"
-    whiteGrow,
-    //% block="IR light"
-    irGrow,
-    //% block="UV light"
-    uvGrow,
+  //% block="White light"
+  whiteGrow,
+  //% block="IR light"
+  irGrow,
+  //% block="UV light"
+  uvGrow,
 }
 
 
@@ -43,34 +43,26 @@ enum lightList {
 //% weight=100 color=#0f9c11 icon="\f06c"
 namespace groblocks {
 
-function init(){
-let groID = serial.readUntil(serial.delimiters(Delimiters.Comma));
+  function init() {
+    let groID = serial.readUntil(serial.delimiters(Delimiters.Comma));
+    serial.print("Ciao!");
 
-
-
-}
-
-
-
-
-
-
-
+  }
 
   /**
   * Mock-up Clock
   */
   //% block
   export function Clock(): number {
-      return 0;
+    return 0;
   }
 
   /**
    * Mock-up Hummidity
    */
   //% block
-  export function Hummidity (): number {
-      return 0;
+  export function Hummidity(): number {
+    return 0;
   }
 
   /**
@@ -78,7 +70,7 @@ let groID = serial.readUntil(serial.delimiters(Delimiters.Comma));
    */
   //% block
   export function Co2(): number {
-      return 0;
+    return 0;
   }
 
   /**
@@ -86,7 +78,7 @@ let groID = serial.readUntil(serial.delimiters(Delimiters.Comma));
    */
   //% block
   export function Temperature(): number {
-      return 0;
+    return 0;
   }
 
 
@@ -96,7 +88,7 @@ let groID = serial.readUntil(serial.delimiters(Delimiters.Comma));
   * Mock-up Light block
   */
   //% blockId=mockUpLight block="Light %lightList, Brightness %brightness"
-  export function setLights(type: lightList, brightness: number){
+  export function setLights(type: lightList, brightness: number) {
 
   }
 
@@ -104,7 +96,8 @@ let groID = serial.readUntil(serial.delimiters(Delimiters.Comma));
   * Mock-up pump block
   */
   //% blockId=mockUpFan block="Pump %pumpList| with speed %speed"
-  export function setPump(type: pumpList, speed: number){
+  export function setPump(type: pumpList, speed: number) {
+
   }
 
 
@@ -112,7 +105,7 @@ let groID = serial.readUntil(serial.delimiters(Delimiters.Comma));
   * Mock-up actuator block
   */
   //% blockId=mockUpActuator block="Choose actuator %actuList| intensity %randNum"
-  export function setActuator(mode:actuList, randNum: number){
+  export function setActuator(mode: actuList, randNum: number) {
 
   }
 
@@ -120,17 +113,17 @@ let groID = serial.readUntil(serial.delimiters(Delimiters.Comma));
   * Mock-up timer block
   */
   //% blockId=mockUpTimer block="fra klokken %fra| til klokken %til"
-export function setClock(clockFra: number, clcokTil: number){
+  export function setClock(clockFra: number, clcokTil: number) {
 
-}
+  }
 
-/**
-* Mock-up timer block
-*/
-//% blockId=mockUpTimer block="Timer: %fra| timer %til| minutter"
-export function setTimer(timerFra: number, timerTil: number){
+  /**
+  * Mock-up timer block
+  */
+  //% blockId=mockUpTimer block="Timer: %fra| timer %til| minutter"
+  export function setTimer(timerFra: number, timerTil: number) {
 
-}
+  }
 
 
 
@@ -143,18 +136,19 @@ export function setTimer(timerFra: number, timerTil: number){
   }
 
 
-      /**
-      * This is an event handler block
-      */
-      //% block="on event"
-      export function grostart(handler: () => void) {
-   }
+  /**
+  * This is an event handler block
+  */
+  //% block="on event"
+  export function grostart(handler: () => void) {
+
+  }
 
 
-   //%block="Klokken: fra %test| til %test2"
-       export function randomBoolean(test: number, test2: number): boolean {
-           return false;
-       }
+  //%block="Klokken: fra %test| til %test2"
+  export function randomBoolean(test: number, test2: number): boolean {
+    return false;
+  }
 
 
 
@@ -169,25 +163,25 @@ export function setTimer(timerFra: number, timerTil: number){
 
 
 
-    /**
-    * prints string on LEDS and on serial port
-    * @param testString string
-    */
-    //% weight=99 blockGap=8
-    //% blockId=testSerialPrint block="Test Serial print: %testString"
-    export function testSerialPrint(testString: string) : void {
-      basic.showString(testString);
-      serial.writeString(testString);
-    }
+  /**
+  * prints string on LEDS and on serial port
+  * @param testString string
+  */
+  //% weight=99 blockGap=8
+  //% blockId=testSerialPrint block="Test Serial print: %testString"
+  export function testSerialPrint(testString: string): void {
+    basic.showString(testString);
+    serial.writeString(testString);
+  }
 
-    /**
-    * Test loaded from comment
-    */
-    //% blockId=testActu block="Choose an actuator %mode"
-    //% weight=99 blockGap=8
-    //export function testActu(mode: actuList) : void {
-    //  serial.writeString(mode);
-    //}
+  /**
+  * Test loaded from comment
+  */
+  //% blockId=testActu block="Choose an actuator %mode"
+  //% weight=99 blockGap=8
+  //export function testActu(mode: actuList) : void {
+  //  serial.writeString(mode);
+  //}
 
 
   //% blockId=testShadow  block="Shadow test %msg"
