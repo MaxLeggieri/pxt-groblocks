@@ -141,7 +141,7 @@ namespace groblocks {
   */
   //% block="on event"
   export function grostart(handler: () => void) {
-
+    serial.write("Ciao Max");
   }
 
 
