@@ -40,7 +40,7 @@ enum lightList {
 
 
 // groblocks graphics
-//% weight=100 color=#0f9c11 icon="\f4d8"
+//% weight=100 color=#0f9c11 icon="\f06c"
 namespace groblocks {
 
 function init(){
