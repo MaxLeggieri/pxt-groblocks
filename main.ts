@@ -4,6 +4,7 @@ Clock		           Controlled fan
 Humidity		       IR Grow
 Moisture		       UV Grow
 Co2	               5 pumps
+
 Sequence #
 */
 
@@ -39,7 +40,7 @@ enum lightList {
 
 
 // groblocks graphics
-//% weight=100 color=#0f9c11 icon="\uf188"
+//% weight=100 color=#0f9c11 icon="\f4d8"
 namespace groblocks {
 
 function init(){
